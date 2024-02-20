@@ -1,0 +1,6 @@
+import urllib.request
+import pandas as pd
+url = "https://raw.githubusercontent.com/OpenAPC/openapc-de/master/data/fuberlin/APC_FU_Berlin_2015.csv"
+apc_file = "openapc.csv"
+urllib.request.urlretrieve(url, apc_file)
+apcs = pd.read_csv(apc_file)
